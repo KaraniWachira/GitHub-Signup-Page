@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> GitHub Signup Page</title>
+    <title> GitHub-Signup-Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
     <form action="post">
         <div class="form-container">
-      <h6>Join GitHub</h6>
-      <h2>First, let's create your user account</h2>
 
-      <div class="label">
+      <h6>Join GitHub</h6>
+      <h1>First, let's create your user account</h1>
+
+      <div class="labels">
         <label for="username">Username<span class="required" >*</span></label>
-        <input type="text" />
-        <label for="email">Email Address<span class="required" >*</span></label>
-        <input type="text" />
+        <input type="text" id="username" />
+
+        <label for="email">Email Address<span class="required">*</span></label>
+        <input type="text" id="email" />
+
         <label for="password">Password<span class="required" >*</span></label>
-        <input type="password" />
+        <input type="password" id="password"/>
+        
       </div>
-        <p>
+
+        <p id="requirement">
           Make sure it's at least 15 characters OR 8 characters including a
           number and a lowercase letter
         </p>
@@ -31,15 +37,20 @@
         <h5>Email preferences</h5>
         <input type="checkbox" id="checkbox" />
         send me occasional product updates, announcements, and offers. <br />
-        <button>Create account</button>
+        <button id="btnSubmit">Create account</button>
+
         <p>
           By creating an account you agree to the
           <a href="#">Tearms of Service</a>. For more information about GitHub's
           privacy practices, see the
           <a href="#">GitHub Privacy Statement</a>. We'll occasionally send you
-          an account related emails
+          an account related emails.
         </p>
+
       </div>
+
     </form>
+
 </body>
+
 </html>
